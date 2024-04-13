@@ -10,7 +10,7 @@ import Contacto from './contacto';
 
 const AppRouter = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/paginaweb">
             <Routes>
                 <Route path="/" element={<Inicio />} />
                 <Route path="/nosotros" element={<Nosotros />} />
