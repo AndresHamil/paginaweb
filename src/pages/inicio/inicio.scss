@@ -1,0 +1,1016 @@
+// ------------------------ ESTILOS HERO ------------------------------
+
+.azteca-inicio-hero{
+    background-color: rgb(40, 48, 77);
+    // height: 450px; Remplazo
+    height: 750px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+    overflow: hidden;
+
+    &_box{
+        height: 100%;
+        width: 1200px;
+        position: relative;
+
+
+        img:nth-child(1) {
+            object-fit: cover;
+            position: absolute;
+            transition: all ease-out 1s;
+            opacity: 1;
+            animation: img 1s forwards;
+            // width:600px; Remplazo
+            width: 1000px;
+            z-index: 1;
+            transform: translateY(-150px);
+            animation: inicio_animaciones 1.5s forwards;
+        }
+
+        img:nth-child(2) {
+            position: absolute;
+            // width: 200px;
+            width: 400px;
+
+
+            // margin-left: 230px;
+            margin-left: 380px;
+
+            bottom: 0px;
+            transform: translateY(150px);
+            animation: inicio_animaciones 1.5s forwards;
+        }
+
+        img:nth-child(3) {
+            width: 1100px;
+            object-fit: cover;
+            position: absolute;
+            // transition: all ease-out 1s;
+            opacity: 1;
+            // animation: img 1s forwards;
+            width:300px;
+            z-index: 1;
+            // background-color: red;
+            top: 0px;
+            // transform: translateY(-150px);
+            // animation: inicio_animaciones 1.5s forwards;
+
+            display: none;
+        }
+    }
+
+    &_container{
+        height: 100%;
+        width: 100%;
+        min-width: 400px;
+        // padding: 30px;
+        padding-top: 70px;
+        padding-right: 10%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        z-index: 2;
+        
+
+        &_text{
+            color: #FFFF;
+            text-align: end;
+            width: auto;
+            max-width: 900px;
+            font-size: 24px;
+            label:nth-child(1) {
+                font-size: 1.2em;
+                transform: translateX(300px);
+                opacity: 0;
+                animation: inicio_animaciones 1s forwards;
+            }
+
+            label:nth-child(3) {
+                font-size: 3.2em;
+                line-height: 1.1;
+                transition-delay: 2s;
+                transform: translateX(300px);
+                opacity: 0;
+                animation: inicio_animaciones 1s forwards;
+                animation-delay: .5s;
+            }
+
+            >p{
+                margin-top: 20px;
+                font-size: 1.3em;
+                transform: translateX(300px);
+                opacity: 0;
+                animation: inicio_animaciones 1s forwards;
+                animation-delay: 1s;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    .azteca-inicio-hero{
+        height: 650px;
+
+        &_box{
+            img:nth-child(1) {
+                width:800px; 
+            }
+            img:nth-child(2) {
+                width:300px; 
+                margin-left: 300px;
+            }
+        }
+
+        &_container{
+            padding-right: 5%;
+
+            &_text{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .azteca-inicio-hero{
+        height: 400px;
+        margin-top: 50px;
+        &_box{
+
+            img:nth-child(1) {
+                display: none;
+            }
+
+            img:nth-child(2) {
+                display: none;
+            }
+
+            img:nth-child(3) {
+                display: block;
+            }
+        }
+
+        &_container{
+            padding: 0;
+            &_text{
+                padding: 20px;
+                font-size: 14px;
+
+                label:nth-child(1) {
+                    font-size: 1.1em;
+                }
+    
+                label:nth-child(3) {
+                    font-size: 3.1em;
+                    line-height: 1;
+                }
+    
+                >p{
+                    margin-top: 20px;
+                    font-size: 1em;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------ ESTILOS SOLUCIONES ------------------------
+
+
+.azteca-inicio-soluciones{
+    width: 100%;
+    height: auto;
+    background-color: #E5EAEE;
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+
+    &_content{
+        width: 100%;
+        max-width: 1000px;
+
+        &_header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-50px);
+            opacity: 0;
+
+            >img{
+                width: 350px
+            }
+        }
+
+        &_texto{
+            margin: 10px 20px 30px 20px;
+            font-size: 16px;
+            text-align: center;
+            transform: translateY(-200px);
+            opacity: 0;
+        }
+
+        &_panel{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &_card{
+                position: relative;
+                background-color: #FFFFFF;
+                width: 100%;
+                max-width: 280px;
+                min-width: 280px;
+                height: 280px;
+                flex: 1;
+                margin: 10px;
+                text-align: center;
+                box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                overflow: hidden;
+                opacity: 0;
+
+                &_img{
+                    left: 0px;
+                    position: absolute;
+                    min-width: 280px;
+                    height: 280px;
+                    z-index: 0;
+                }
+
+                &_text{
+                    position: relative;
+                    background-color: rgba(0, 0, 0, 0.479);
+                    height: 100%;
+                    width: 100%;
+                    transform: translateX(100%);
+                    transition: transform 0.3s;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    z-index: 100;
+
+                    opacity: .8;
+
+                    
+
+
+                    &_content{
+                        background-color: #091727;
+                        height: 100%;
+                        padding: 20px;
+                        color: #FFFF;
+                        text-align: right;
+
+                        >p{
+                            margin-top: 30px;
+                            font-size: 12px;
+
+                            text-align: right;
+
+                        }
+                    }
+
+                    &_footer{
+                        background-color: #F2F2F2;
+                        height: auto;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+
+                    }
+                }
+
+
+            }
+
+            &_card:nth-child(1) {
+                transform: translateY(50px);
+            }
+            &_card:nth-child(2) {
+                transform: translateY(100px);
+            
+            }
+            &_card:nth-child(3) {
+                transform: translateY(150px);
+            
+            }
+
+            &_card:hover &_card_text {
+                transform: translateX(0%);
+            }
+
+
+            
+        }
+
+        &_informacion{
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px 0px;
+
+            transform: translateX(-400px);
+            opacity: 0;
+
+            &_card{
+                background-color: #FFFFFF;
+                width: 100%;
+                height: 120px;
+                flex: 1;
+                max-width: 200px;
+                min-width: 200px;
+                margin: 10px;
+                box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                transition: transform 0.3s;
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: repeat(10, auto);
+                grid-template-rows: repeat(10, auto);
+                
+
+                .elemento1{
+                    color: #CC274C;
+                    grid-column: 1/7;
+                    grid-row: 1/8;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 42px;
+
+                    
+                }
+
+                .elemento2{
+                    grid-column: 7/11;
+                    grid-row: 1/8;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+
+                    >img{
+                        width: 50px
+
+                    }
+                }
+
+                .elemento3{
+                    grid-column: 1/11;
+                    grid-row: 8/11;
+                    color: #00286E;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .azteca-inicio-soluciones{
+        &_content{
+            &_header{
+                >img{
+                    width: 70%;
+                }
+            }
+
+            &_informacion{
+                &_card{
+                    height: 100px;
+                    max-width: 170px;
+                    min-width: 170px;
+                    margin: 5px;
+
+                    .elemento1{
+                        font-size: 32px;
+                    }
+    
+                    .elemento2{
+                        grid-column: 7/11;
+                        grid-row: 1/8;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        >img{
+                            width: 50px
+    
+                        }
+                    }
+    
+                    .elemento3{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ------------------------ ESTILOS SERVICIOS ------------------------
+
+.azteca-servicios{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F9FBFC;
+
+    overflow: hidden;
+
+    &_content{
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+
+        &_header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >img{
+                width: 350px
+            }
+        }
+
+        &_elements{
+            margin: 50px 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 1px;   
+            animation-delay: 3s;
+
+            &_box{
+                background-color: #F9FBFC;
+                padding: 10px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                transform: translateY(-200px);
+                opacity: 0;
+
+                &_panel-icon{
+                    width: 80px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+
+                    >img{
+                        width: 60px;
+                    }
+
+                }
+                &_panel-content{
+                    width: 100%;
+                    height: 100%;
+                    padding-bottom: 10px;
+
+                    &_text{
+                        height: calc(100% - 40px);
+                        padding-left: 10px;
+
+                        >label{
+                            font-size: 12px;
+                        }
+                        
+                        >p{
+                            color: rgba(0, 0, 0, 0.555);
+                            font-size: 12px;
+                            text-align: justify;
+
+                        }
+                    }
+
+                    &_enlace{
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+
+                        &_img{
+                            background-color: #2E4054;
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 100px;
+                            margin: 0px 5px;
+                            
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            >img{
+                                width: 80%;
+                            }
+
+                        }
+
+                        >span{
+                            cursor: pointer;
+                            font-size: 12px;
+                            
+                        }
+
+                      
+                    }
+                    
+                }
+            }
+
+            &_box:nth-child(2) {
+                animation-delay: .5s;
+            }
+            &_box:nth-child(3) {
+                animation-delay: 1s;
+            }
+            &_box:nth-child(4) {
+                animation-delay: 1.5s;
+            }
+            &_box:nth-child(5) {
+                animation-delay: 2s;
+            }
+            &_box:nth-child(6) {
+                animation-delay: 2.5s;
+            }
+
+        }
+        >.inicio-animaciones {
+            transition: all ease-in-out 1s;
+            animation: capital-humano-animaciones-panel 2s forwards;
+            animation-delay: 3.5s;
+        }
+
+        @keyframes capital-humano-animaciones-panel {
+            to {
+                background-color: #707070;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            &_elements{
+                grid-template-columns: 1fr 1fr; 
+            } 
+        }
+
+        @media only screen and (max-width: 480px) {
+            &_elements{
+                grid-template-columns: 1fr; 
+            } 
+        }
+    } 
+}
+
+@media only screen and (max-width: 1000px) {
+    .azteca-servicios{
+        &_content{
+            &_header{
+                >img{
+                    width: 70%;
+                }
+            }
+
+            &_elements{
+                &_box{
+                    &_panel-icon{
+                        >img{
+                            width: 40px;
+                        }
+                    }
+
+                    &_panel-content{
+                        &_text{
+                            >p{
+                                font-size: 11px;
+                            }
+                        }
+    
+                        &_enlace{
+
+    
+                            &_img{
+                                >img{
+                                    width: 70%;
+                                }
+    
+                            }
+    
+                            >span{
+                                font-size: 11px;
+                            }
+    
+                          
+                        }
+                        
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+// ------------------------ ESTILOS EXPERIENCIA ------------------------
+
+
+.azteca-inicio-experiencia{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2E4054;
+    padding: 20px;
+
+    overflow: hidden;
+
+    &_content-top{
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &_media{
+            width: 100%;
+            height: auto;
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            text-align: center;
+            overflow: hidden;
+            height: 300px;
+            border-radius: 5px;
+            transform: translateX(-300px);
+            opacity: 0;
+        }
+
+
+        &_text{
+            width: 100%;
+            max-width: 430px;
+            height: auto;
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            overflow: hidden;
+            text-align: start;
+            color: #FFFF;
+            transform: translateY(-200px);
+            opacity: 0;
+            // text-align: justify;
+
+        }
+    }
+
+    &_content-medium{
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+
+        &_panel{
+            background-color: #FFFF;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 10px;
+            transform: scale(0);
+            opacity: 0;
+            
+            span{
+                color: #00286E;
+                font-weight: bold;
+            }
+
+            label{
+                font-weight: bold;
+            }
+        }
+    }
+
+    &_content-button{
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+
+        &_card{
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 150px;
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            opacity: 0;
+            
+            &_img{
+                // background-color: red;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                >img{
+                    width: 100%;
+                    
+                }
+            }
+
+            &_text{
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: start;
+                margin-left: 10px;
+            }
+        }
+
+        &_card:nth-child(1) {
+            transform: translateX(-400px);
+            background-color: #BED2E0;
+            animation-delay: 1.5s;
+        }
+
+        &_card:nth-child(2) {
+            transform: translateX(400px);
+            background-color: #7A8D9E;
+            animation-delay: 1.5s;
+        }
+    }
+}
+
+.azteca-proyectos {
+    // padding:5.5em 1em;
+    padding: 0px 1em 50px 1em;
+    background-color: #F9FBFC;
+    overflow: hidden;
+    
+    .container{
+        
+
+        &_header{
+            // background-color: red;
+            height: 150px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &_img{
+                position: absolute;
+                left: 50%; /* Se coloca en el centro horizontal */
+                transform: translateX(-50%); /* Centra horizontalmente con respecto al padre */
+          
+
+                >img{
+                    width: 350px
+                }
+            }
+
+         
+        }
+
+  
+        .row{
+            background-color: #087fbb00;
+            // box-shadow: none;
+
+            .col-xl-12{
+                background-color: #087fbb00;
+
+                .splide{
+                    background-color: #087fbb00;
+                    box-shadow: none;
+
+                    // .pop{
+                    //     background-color: #087fbb00;
+                
+                    // }
+                }
+            }
+        }
+
+        .item-slidd {
+            border: 0.2em solid #5e5e5e;
+            background-color: #F4F2EC;
+            // padding: 3em;
+            border-radius: 0.5em;
+            z-index: 2;
+            position: relative;
+            overflow: hidden;
+            min-height: 500px;
+
+            .img{
+                height: 350px;
+
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .texto{
+                // background-color: red;
+                padding: 10px;
+                text-align: justify;
+
+            }
+
+            .footer{
+                // background-color: yellow;
+                display: flex;
+            
+
+                &_fecha{
+                    // background-color: gray;
+                    flex: 1;
+                    padding: 10px;
+
+                }
+
+                &_img{
+                    // background-color: white;
+                    height: 50px;
+                    width: 90px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px 10px;
+
+                    >img{
+                        width: 100%;
+                    }
+
+                }
+            }
+    
+    
+        }
+    }
+
+    
+}
+
+
+.azteca-cabecera-contacto {
+    padding:8em 1em;
+    background-image: url('../../assets/img/contacto/header-contacto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+
+
+    
+
+    h1 {
+        color:white;
+        font-size: 3.5em;
+        font-style: italic;
+        line-height: 1.2em;
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.azteca-formulario-contacto {
+    padding:6em 1em;
+    overflow: hidden;
+
+    .informacion {
+        top:50%;
+        transform: translate(0,-50%);
+        position: relative;
+
+        >p {
+            font-size: 1.7em;
+            line-height: 1.1;
+            
+        }
+
+        ul {
+            margin:2em 0;
+            padding: 0;
+    
+            li {
+                font-size: 1.1em;
+                list-style-type: none;
+            }
+        }
+    
+        .logo {
+            width: 45%;
+            display: block;
+        }
+    }
+
+    .form-control {
+        border:0.15em solid #707070;
+        padding:1em;
+        margin-bottom: 1.4em;
+        color:#828588;
+    }
+
+    .btn-contacto {
+        background-color: #CC274C;
+        width: 100%;
+        color:white;
+        font-size: 1.2em;
+        padding:0.6em;
+
+        &:hover {
+            background-color: #b31537;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .azteca-cabecera-contacto {
+
+        .informacion {
+            text-align: center;
+            padding:2em 0;
+
+            .logo {
+                margin:0 auto;
+            }
+        }
+    }
+
+    .azteca-formulario-contacto {
+        .informacion {
+            .logo {
+                margin:0 auto;
+                margin-bottom: 5em;
+            }
+        }
+    }
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1200px) {
+    
+    .azteca-cabecera-contacto {
+        padding:5em 1em;
+
+        h1 {
+            text-align: center;
+            font-size: 2.7em;
+            line-height: 1em;
+        }
+    }
+}
+
+.azteca-mapa{
+    height: 600px;
+    overflow: hidden;
+}
+
+
+.inicio-animaciones{
+    transition: all ease-in-out 1s;
+    animation: inicio_animaciones 1s forwards;
+}
+
+
+@keyframes inicio_animaciones {
+    to {
+        transform: translate(0,0);
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+

@@ -1,0 +1,24 @@
+@import url('./fonts.scss');
+@import url('./variable.scss');
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: "Raleway-Medium";
+}
+
+// html {
+//     scroll-behavior: smooth;
+// }
