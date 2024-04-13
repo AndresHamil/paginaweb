@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/paginaweb/static/css/main.d3014d28.css",
-    "main.js": "/paginaweb/static/js/main.bc7a2748.js",
+    "main.js": "/paginaweb/static/js/main.13918304.js",
     "static/media/nosotros-mision-2.jpg": "/paginaweb/static/media/nosotros-mision-2.d8411baa8048dd539130.jpg",
     "static/media/nosotros-header.png": "/paginaweb/static/media/nosotros-header.5b11052040f484709b5e.png",
     "static/media/capital-humano-talento-1.png": "/paginaweb/static/media/capital-humano-talento-1.3ac0f3de8e2b4b4db7a3.png",
@@ -110,10 +110,10 @@
     "static/media/transportes-azteca-inicio-proyectos-iso14001.webp": "/paginaweb/static/media/transportes-azteca-inicio-proyectos-iso14001.523dc5e5c611b763e647.webp",
     "index.html": "/paginaweb/index.html",
     "main.d3014d28.css.map": "/paginaweb/static/css/main.d3014d28.css.map",
-    "main.bc7a2748.js.map": "/paginaweb/static/js/main.bc7a2748.js.map"
+    "main.13918304.js.map": "/paginaweb/static/js/main.13918304.js.map"
   },
   "entrypoints": [
     "static/css/main.d3014d28.css",
-    "static/js/main.bc7a2748.js"
+    "static/js/main.13918304.js"
   ]
 }
